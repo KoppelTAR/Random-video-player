@@ -3,12 +3,15 @@ import webbrowser
 import tkinter as tk
 from decouple import config
 basedir = config('DIRECTORY')
+fileTypes = config('FILETYPES')
 
 
 def play_video():
-    file = random.choice([x for x in os.listdir(
-        basedir) if os.path.isfile(os.path.join(basedir, x))])
-    webbrowser.open(os.path.join(basedir, file))
+    file = random.choice([x for x in os.listdir(basedir) 
+    if os.path.isfile(os.path.join(basedir, x))])
+    for type in fileTypes:
+        if file.endswith(type):
+            webbrowser.open(os.path.join(basedir, file))
 
 r = tk.Tk()
 r.title('Random video player')
