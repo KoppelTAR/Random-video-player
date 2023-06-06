@@ -7,25 +7,32 @@ Simple python script that plays a random video from a directory
 
 Python 3 https://www.python.org/downloads/ (duh)
 
-Python Decouple https://pypi.org/project/python-decouple/ (for storing environmental variables such as the video folder directory)
+Python Decouple https://pypi.org/project/python-decouple/ (For storing environmental variables such as the video folder directory)
+
+Tkinter https://docs.python.org/3/library/tkinter.html (For the UI)
 
 ## How to run
 
 1. Download the script.
 
-2. Download Python Decouple using pip.
+2. Download required packages using pip.
 
 ```powershell
-pip install python-decouple
+pip install -r requirments.txt
 ```
 
-3. create file named ".env" and add the directory string (example .env is included if you don't want to create your own).
+3. Download tkinter manually (I am too dumb to figure out how to put tkinter in requirments.txt)
+```powershell
+pip install tk
+```
+
+4. Create file named ".env" and add the directory string (example .env is included if you don't want to create your own).
 
 ```
 DIRECTORY=D:\AlwaysSunny\
 ```
 
-4. Run script.
+5. Run script.
 
 If done right this should open a random file in the selected directory. 
 NOTE: this will open any type of file in the directory so keep only files you want to be played in the directory.
