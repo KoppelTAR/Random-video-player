@@ -34,7 +34,7 @@ pip install tk
 
 ```
 DIRECTORY=D:\AlwaysSunny\
-FILETYPES= [".mp4",".ts",".mov"]
+FILETYPES=[".mp4",".ts",".mov"]
 ```
 
 5. Run script.

@@ -12,6 +12,7 @@ def play_video():
     for type in fileTypes:
         if file.endswith(type):
             webbrowser.open(os.path.join(basedir, file))
+            break
 
 r = tk.Tk()
 r.title('Random video player')
